@@ -1,21 +1,270 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffdbac;
 }
 
 /************************* Section-1 *************************/
 
 .section_one {
-    border: 2px solid #000;
-    background-image: url("./images/backgroundImg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
+  background-image: url("./images/background_img.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.navbar_logo {
+  height: 100px;
+  margin: 1.5rem;
+  border-radius: 50%;
 }
 
 .main_heading {
+  color: #fff;
+}
+
+.main_heading_text,
+.below_main_heading_text {
+  color: #fff;
+  text-align: center;
+}
+
+.main_heading_text {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.navbar_buttons {
+  margin-right: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login_btn {
+  background-color: rgb(41, 27, 1);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login_btn i {
+  margin-left: 3rem;
+}
+
+.search_btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 2rem 0 1rem;
+}
+
+.search_btn i {
+  margin-left: 3rem;
+}
+
+.hamburger_btn {
+  border: none;
+  outline: none;
+  background-color: maroon;
+  padding: 0.5rem;
+}
+
+.hamburger_btn i {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/************************* Section-2 *************************/
+
+.section_two {
+    max-width: 800px;
+    margin: 4rem auto;
+}
+
+.main_center_text {
+    text-align: center;
+}
+
+/************************* Section-3 *************************/
+
+.section_three {
+    max-width: 1000px;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    
+}
+
+.grid_container {
+    /* border: 2px solid #fff; */
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    grid-template-rows: repeat(19 , 50px);
+    grid-gap: 1.5rem;
+}
+
+.box {
     color: #fff;
+    background-color: #000;
+}
+
+.box-1 {
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.box-2 {
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.box-3 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.box-4 {
+    grid-row-start: 8;
+    grid-row-end: 13;
+}
+
+.box-5 {
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.box-6 {
+    grid-row-start: 7;
+    grid-row-end: 13;
+}
+
+.box-7 {
+    grid-row-start: 13;
+    grid-row-end: 20;
+}
+
+.box-8 {
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+.box-9 {
+    grid-row-start: 13;
+    grid-row-end: 20;
+}
+
+.box-10 {
+    grid-row-start: 15;
+    grid-row-end: 20;
+}
+
+/************************* Section-4 *************************/
+
+.section_four {
+    max-width: 950px;
+    margin: 4rem auto;
+    display: flex;
+    border: 2px solid #000;
+}
+
+.left_info_div {
+    flex-basis: 40%;
+    border-right: 2px solid #000;
+}
+
+.bottom_logo {
+    border-radius: 50%;
+    height: 150px;
+}
+
+.address_div {
+    margin: 1rem 0;
+}
+
+.address_text,
+.phone_text {
+    font-weight: bold;
+}
+
+.phone_div {
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links i {
+    font-size: 2rem;
+}
+
+.right_map_div {
+    flex-basis: 60%;
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quick_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quick_links a {
+    text-decoration: none;
+    color: #000;
+}
+
+/************************* Section-5 *************************/
+
+.scroll_top {
+    max-width: 1000px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.scroll_to_top_btn {
+    border: 2px solid #000;
+    padding: 8px 16px 1px 16px;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*************************** footer ***************************/
+
+footer {
+    background-color: maroon;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
 }
